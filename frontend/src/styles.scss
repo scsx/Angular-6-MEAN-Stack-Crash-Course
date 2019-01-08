@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+// container
+.example-card {
+    max-width: 1420px;
+    margin: 0 auto 40px auto;
+}
+.mat-expansion-panel-header-title {
+    width: 33%;
+}
+.mat-expansion-panel-header-description {
+    flex-grow: 0 !important;
+}

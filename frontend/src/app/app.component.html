@@ -1,0 +1,55 @@
+<mat-toolbar color="primary">
+  <span>Angular 6 & MEAN</span>
+</mat-toolbar>
+<div class="router-outlet">
+  <router-outlet></router-outlet>
+</div>
+
+<mat-card class="example-card">
+  <mat-card-title>Accordion & Datepicker</mat-card-title>
+  <mat-accordion>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Aragorn
+        </mat-panel-title>
+        <mat-panel-description>
+          Viggo Mortensen
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <p>Aragorn II, son of Arathorn is a fictional character from J. R. R. Tolkien's legendarium. He is one of the
+        main protagonists of The Lord of the Rings. Aragorn was a Ranger of the North, first introduced with the name
+        Strider at Bree, as the Hobbits continued to call him throughout The Lord of the Rings. </p>
+    </mat-expansion-panel>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Legolas
+        </mat-panel-title>
+        <mat-panel-description>
+          Orlando Bloom
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <p>Legolas is a fictional character in J. R. R. Tolkien's legendarium. He is a Sindarin Elf of the Woodland Realm
+        and one of nine members of the Fellowship of the Ring</p>
+    </mat-expansion-panel>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Samwise Gamgee
+        </mat-panel-title>
+        <mat-panel-description>
+          Sean Astin
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <p>Samwise "Sam" Gamgee is a fictional character in J. R. R. Tolkien's legendarium. Samwise is one of the main
+        characters of The Lord of the Rings, in which he fills an archetypal role as the sidekick of the primary
+        protagonist, Frodo Baggins.</p>
+    </mat-expansion-panel>
+  </mat-accordion>
+  <mat-form-field>
+    <input matInput [matDatepicker]="picker" placeholder="Escolha uma data">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+</mat-card>
