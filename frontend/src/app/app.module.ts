@@ -20,6 +20,9 @@ import { ListComponent } from './components/list/list.component';
 import { CreateComponent } from './components/create/create.component';
 import { EditComponent } from './components/edit/edit.component';
 
+// Service
+import { IssueService } from './issue.service';
+
 const routes: Routes = [
     { path: 'create', component: CreateComponent },
     { path: 'edit/:id', component: EditComponent },
@@ -48,7 +51,7 @@ const routes: Routes = [
         MatInputModule,
         MatCardModule
     ],
-    providers: [],
+    providers: [IssueService],
     bootstrap: [AppComponent]
 })
 export class AppModule { }
