@@ -6,9 +6,10 @@ https://codingthesmartway.com/angular-6-mean-stack-crash-course-part-1-front-end
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.3.
 
-## Development server
+## Development servers
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `npm run dev` for the backend dev server. Available at `localhost:27017` (ot other specified at Robo 3T > MongoDB Connections).
 
 ## Code scaffolding
 
