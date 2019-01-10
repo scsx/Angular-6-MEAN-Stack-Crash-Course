@@ -4,13 +4,20 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 // Material
-import {MatToolbarModule} from '@angular/material';
+import { MatToolbarModule, 
+         MatFormFieldModule, 
+         MatInputModule, 
+         MatOptionModule, 
+         MatSelectModule, 
+         MatIconModule, 
+         MatButtonModule, 
+         MatCardModule, 
+         MatTableModule, 
+         MatDividerModule, 
+         MatSnackBarModule } from '@angular/material';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatDatepickerModule} from '@angular/material/datepicker';
-import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatNativeDateModule} from '@angular/material';
-import {MatInputModule} from '@angular/material';
-import {MatCardModule} from '@angular/material/card';
 
 // Custom
 import { AppRoutingModule } from './app-routing.module';
@@ -21,6 +28,7 @@ import { CreateComponent } from './components/create/create.component';
 import { EditComponent } from './components/edit/edit.component';
 
 // Service
+import {HttpClientModule} from '@angular/common/http';
 import { IssueService } from './issue.service';
 
 const routes: Routes = [
@@ -42,14 +50,24 @@ const routes: Routes = [
         AppRoutingModule,
         BrowserAnimationsModule,
         RouterModule.forRoot(routes),
-        // Material
+        BrowserModule,
+        BrowserAnimationsModule,
+        RouterModule.forRoot(routes),
+        HttpClientModule,
         MatToolbarModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatOptionModule,
+        MatSelectModule,
+        MatIconModule,
+        MatButtonModule,
+        MatCardModule,
+        MatTableModule,
+        MatDividerModule,
+        MatSnackBarModule,
         MatExpansionModule,
         MatDatepickerModule,
-        MatFormFieldModule,
-        MatNativeDateModule,
-        MatInputModule,
-        MatCardModule
+        MatNativeDateModule
     ],
     providers: [IssueService],
     bootstrap: [AppComponent]
