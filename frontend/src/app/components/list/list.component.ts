@@ -25,10 +25,10 @@ export class ListComponent implements OnInit {
     ngOnInit() {
         this.fetchIssues();
 
-        // sandbox
-        console.log("I'm on ngOnInit");
+        // experiencias
+        //console.log("I'm on ngOnInit");
         //document.getElementById("h1").innerHTML="Daniel Boone";
-        $('h1#h1').text("Daniel Boone"); //
+        $('h1#h1').text("jQuery text here"); //
     }
 
     fetchIssues() {
@@ -42,6 +42,7 @@ export class ListComponent implements OnInit {
 
     editIssue(id) {
         this.router.navigate([`/edit/${id}`]);
+        console.log(id);
     }
 
     deleteIssue(id) {

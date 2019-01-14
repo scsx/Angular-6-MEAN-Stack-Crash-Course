@@ -3,6 +3,13 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+h1 {
+    font-weight: 500;
+}
+.text-center {
+    text-align: center !important;
+}
+
 // container
 .example-card {
     max-width: 1420px;
@@ -13,4 +20,12 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 .mat-expansion-panel-header-description {
     flex-grow: 0 !important;
+}
+
+table.mat-table {
+    width: 100%;
+}
+
+.mat-form-field {
+    padding-right: 20px;
 }

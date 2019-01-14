@@ -3,6 +3,9 @@ import mongoose from 'mongoose';
 const Schema = mongoose.Schema;
 
 let Issue = new Schema({
+    _id: {
+        type: Number
+    },
     title: {
         type: String
     },

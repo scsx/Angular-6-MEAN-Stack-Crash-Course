@@ -31,6 +31,9 @@ import { EditComponent } from './components/edit/edit.component';
 import {HttpClientModule} from '@angular/common/http';
 import { IssueService } from './issue.service';
 
+// Forms
+import { ReactiveFormsModule } from '@angular/forms';
+
 const routes: Routes = [
     { path: 'create', component: CreateComponent },
     { path: 'edit/:id', component: EditComponent },
@@ -67,7 +70,8 @@ const routes: Routes = [
         MatSnackBarModule,
         MatExpansionModule,
         MatDatepickerModule,
-        MatNativeDateModule
+        MatNativeDateModule,
+        ReactiveFormsModule
     ],
     providers: [IssueService],
     bootstrap: [AppComponent]
